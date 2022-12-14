@@ -27,9 +27,13 @@ This website help user's and creator's to read and post their knowledge with eve
 ### Output 
 
 ![Image](./images/home.png)
+
 ![Image](./images/trending.png)
+
 ![Image](./images/carousel.png)
+
 ![Image](./images/recent.png)
+
 ![Image](./images/footer.png)
 
 
