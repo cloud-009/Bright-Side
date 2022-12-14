@@ -24,6 +24,15 @@ This website help user's and creator's to read and post their knowledge with eve
 * Go inside backend folder and type `nodemon index.js` which will run the API and you can now see the application running in the browser.
 
 
+### Output 
+
+![Image](./images/home.png)
+![Image](./images/trending.png)
+![Image](./images/carousel.png)
+![Image](./images/recent.png)
+![Image](./images/footer.png)
+
+
 #### Wanna Contribute?
 
 * Clone the repository and fix the bugs, write test-cases, new feature anything that comes in your creative mind.
