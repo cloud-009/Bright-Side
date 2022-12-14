@@ -6,10 +6,10 @@ This website help user's and creator's to read and post their knowledge with eve
 
 ## Technology Used
 
-**:electron: MongoDB**
-**:electron: Express**
-**:electron: NodeJS**
-**:electron: Angular**
+* **:electron: MongoDB**
+* **:electron: Express**
+* **:electron: NodeJS**
+* **:electron: Angular**
 
 ### How to run this project
 
