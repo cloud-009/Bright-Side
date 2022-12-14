@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+.top-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.recent {
+    width: 80%;
+    margin: 40px auto 40px auto;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.news-letter {
+    width: 100%;
+    margin: 40px auto 0 auto;
+}
+
+.footer {
+    width: 100%;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin: 0 0 0 70px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px;
+}
+
+.intro {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    height: calc(100vh - 40px);
+    background-image: linear-gradient(to right, #827be6, #827be6, #827be6, #8e88e8, #9595eb, #b4aff0, #cdcaf5);
+}
+
+.home-top {
+    position: relative;
+}
+
+.top {
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 10px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.gif {
+    position: absolute;
+    top: 35%;
+    left: 30px;
+}
+
+.home-text {
+    position: absolute;
+    width: 500px;
+    top: 180px;
+    left: 45rem;
+}
+
+.home-text>h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin: 20px 0 0 0;
+}
+
+.gif-image {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -150px;
+    left: 110%;
+}
+
+.white {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.black {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.image-items {
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+    transition: 2ms;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.first-image {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+}
+
+.second-image {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+}
+
+.third-image {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+}
+
+.fourth-image {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+}
+
+.fifth-image {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+}
+
+.sixth-image {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+}
+
+.text {
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h6 {
+    font-weight: 700;
+}
+
+section {
+    position: relative;
+}
+
+.image-hover:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* Shape divider */
+.custom-shape-divider-bottom-1670842969 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670842969 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 121px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1670842969 .shape-fill {
+    fill: #fff;
+}
+
+
+/* Recent styling */
+
+.heading {
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin: 0 0 0 40px;
+    color: linear-gradient(to right, #4ca5a6, #3a7d7d, #275555, #152c2d);
+}
+
+.top-container-recent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+.inside-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.same-width {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tag {
+    width: 30%;
+    margin: 0 0 0 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: gray;
+    text-transform: uppercase;
+}
+
+.same-width>h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.top-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.author-image {
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 0 10px 0;
+}
+
+.author-name {
+    color: gray;
+}
+
+.blog-date {
+    color: gray;
+}
+
+.summary {
+    text-align: left;
+    font-weight: 200;
+    font-size: 1rem;
+}

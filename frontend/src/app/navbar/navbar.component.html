@@ -1,0 +1,20 @@
+<nav class="navbar" [ngClass]="{'navbar-scroll': isScrolled}">
+    <ul>
+        <li>
+            <a class="brand-logo">Bright Side</a>
+        </li>
+        <li class="burger" (click)="toggleNavbarMenu()">
+            <strong class="material-icons">{{isMenuOpen ? 'close' : 'menu'}}</strong>
+        </li>
+        <li class="menu" [class.is-open]="isMenuOpen">
+            <a class="menu-items">Home</a>
+            <a class="menu-items">About</a>
+            <a class="menu-items">Blogs</a>
+            <a class="menu-items">Find</a>
+        </li>
+    </ul>
+</nav>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

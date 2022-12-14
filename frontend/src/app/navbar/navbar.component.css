@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 2px 2px 8px black;
+}
+
+.navbar.navbar-scroll {
+    background-color: rgba(255, 255, 255);
+    z-index: 100;
+}
+
+.brand-logo {
+    height: 40px;
+    width: 10rem;
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    cursor: pointer;
+    letter-spacing: 7px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.burger {
+    padding: 0 10px;
+    border-left: 1px solid #eee;
+    display: none;
+    cursor: pointer;
+}
+
+strong {
+    color: #999;
+    line-height: 40px;
+}
+
+@media(max-width:610px) {
+    .menu {
+        display: none;
+    }
+
+    .is-open {
+        display: block;
+        position: absolute;
+        top: 36.5px;
+        background: #fff;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .menu-items {
+        width: 100%;
+        background: #d32434;
+        border-bottom: 1px solid #cccccc;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .burger {
+        display: block;
+        color: white;
+    }
+}
+
+@media(max-width:260px) {
+    .brand-logo {
+        height: 40px;
+        width: 8rem;
+        margin: 0 0 0 20px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+        font-family: 'Anton', sans-serif;
+        cursor: pointer;
+        letter-spacing: 5px;
+    }
+}
