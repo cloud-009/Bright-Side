@@ -17,7 +17,7 @@ This website help user's and creator's to read and post their knowledge with eve
 
 * Make sure you have **MongoDB** installed in your system so you can store the data
 
-* Next, go inside **frontend** folder and type `ng serve` to run the frontend application and go to the port which is provided by the terminal
+* Next, go inside **project** folder and type `ng serve` in the terminal to run the frontend application and go to the port which is provided by the terminal
 
 * Now you need to run the backend part inorder to run the application fully.
 
