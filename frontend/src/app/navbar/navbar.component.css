@@ -64,6 +64,7 @@ ul {
 }
 
 .menu {
+
     display: flex;
     align-items: center;
 }
@@ -100,19 +101,18 @@ strong {
     }
 
     .is-open {
+        height: 200px;
         display: block;
         position: absolute;
         top: 36.5px;
-        background: #fff;
         width: 100%;
-        z-index: 100;
+        z-index: 1000;
     }
 
     .menu-items {
         width: 100%;
-        background: #d32434;
+        background: #b4aff0;
         border-bottom: 1px solid #cccccc;
-        height: 40px;
         line-height: 40px;
     }
 

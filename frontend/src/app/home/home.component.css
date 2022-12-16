@@ -173,6 +173,7 @@ h6 {
 
 section {
     position: relative;
+    z-index: inherit;
 }
 
 .image-hover:hover {
@@ -195,8 +196,9 @@ section {
 }
 
 .custom-shape-divider-bottom-1670842969 svg {
-    position: relative;
     display: block;
+    position: relative;
+    z-index: 0;
     width: calc(100% + 1.3px);
     height: 121px;
     transform: rotateY(180deg);
@@ -286,3 +288,4 @@ section {
     font-weight: 200;
     font-size: 1rem;
 }
+

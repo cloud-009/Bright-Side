@@ -11,6 +11,9 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { TrendingComponent } from './trending/trending.component';
+import { AddblogComponent } from './addblog/addblog.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,14 +25,17 @@ import { TrendingComponent } from './trending/trending.component';
     NewsletterComponent,
     CarouselComponent,
     FooterComponent,
-    TrendingComponent
+    TrendingComponent,
+    AddblogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
