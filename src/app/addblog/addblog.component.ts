@@ -10,12 +10,21 @@ import { ApiService } from '../api.service';
 export class AddblogComponent implements OnInit {
 
   submitForm!: FormGroup;
+  buttonContainerVisible = false;
 
   constructor(private api: ApiService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.formControls();
     this.getStory();
+  }
+
+  toggleButtonContainer() {
+    this.buttonContainerVisible = !this.buttonContainerVisible;
+  }
+
+  showButton() {
+    this.buttonContainerVisible = true
   }
 
   formControls() {

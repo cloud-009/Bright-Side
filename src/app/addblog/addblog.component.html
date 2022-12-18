@@ -2,15 +2,28 @@
     <div class="body">
         <form [formGroup]="submitForm">
             <div class="header">
-                <input type="text" class="title" placeholder="Enter title" formControlName="title">
+                <input type="text" class="title" placeholder="Enter title" formControlName="title"
+                    (focus)="showButton()">
             </div>
             <div class="body">
-                <textarea name="body-content" id="body-content" cols="30" rows="10"
-                    placeholder="Enter your story" formControlName="content"></textarea>
+                <textarea name="body-content" id="body-content" cols="30" rows="10" placeholder="Enter your story"
+                    formControlName="content">
+                </textarea>
             </div>
             <div class="bottom">
-                <button type="button" class="btn" (click)="postStory()">Submit</button>
+                <button type="button" class="add-button" (click)="postStory()">Post Your Story</button>
             </div>
         </form>
+    </div>
+
+    <a (click)="toggleButtonContainer()">
+        <strong class="fa-solid fa-add fa-xl"></strong>
+    </a>
+    <div [style.display]="buttonContainerVisible ? 'flex' : 'none'">
+        <ul>
+            <li>Button 1</li>
+            <li>Button 2</li>
+            <li>Button 3</li>
+        </ul>
     </div>
 </div>
