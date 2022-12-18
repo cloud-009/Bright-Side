@@ -27,6 +27,10 @@ export class AddblogComponent implements OnInit {
     this.buttonContainerVisible = true
   }
 
+  hideButton() {
+    this.buttonContainerVisible = false
+  }
+
   formControls() {
     this.submitForm = this.fb.group({
       title: [''],

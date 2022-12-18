@@ -2,12 +2,11 @@
     <div class="body">
         <form [formGroup]="submitForm">
             <div class="header">
-                <input type="text" class="title" placeholder="Enter title" formControlName="title"
-                    (focus)="showButton()">
+                <input type="text" class="title" placeholder="Enter title" formControlName="title">
             </div>
             <div class="body">
                 <textarea name="body-content" id="body-content" cols="30" rows="10" placeholder="Enter your story"
-                    formControlName="content">
+                    formControlName="content" (focus)="showButton()" (blur)="hideButton()">
                 </textarea>
             </div>
             <div class="bottom">
@@ -16,14 +15,19 @@
         </form>
     </div>
 
-    <a (click)="toggleButtonContainer()">
-        <strong class="fa-solid fa-add fa-xl"></strong>
-    </a>
-    <div [style.display]="buttonContainerVisible ? 'flex' : 'none'">
-        <ul>
-            <li>Button 1</li>
-            <li>Button 2</li>
-            <li>Button 3</li>
-        </ul>
+    <div class="expand-button" [style.display]="buttonContainerVisible ? 'flex' : 'none'">
+        <div>
+            <ul>
+                <li>
+                    <strong class="fa-solid fa-image fa-xl"></strong>
+                </li>
+                <li>
+                    <strong class="fa-solid fa-link fa-xl"></strong>
+                </li>
+                <li>
+                    <strong class="fa-solid fa-code fa-xl"></strong>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
