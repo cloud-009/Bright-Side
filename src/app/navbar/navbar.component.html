@@ -7,10 +7,10 @@
             <strong class="material-icons">{{isMenuOpen ? 'close' : 'menu'}}</strong>
         </li>
         <li class="menu" [class.is-open]="isMenuOpen">
-            <a class="menu-items">Home</a>
+            <a class="menu-items" routerLink="/dashboard/home">Home</a>
             <a class="menu-items">About</a>
             <a class="menu-items" routerLink="/add-blog">Blogs</a>
-            <a class="menu-items">Find</a>
+            <a class="menu-items">sign in/up</a>
         </li>
     </ul>
 </nav>

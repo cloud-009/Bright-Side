@@ -54,7 +54,7 @@ input:focus {
 }
 
 .header {
-    color: black;
+    color: #666666;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     font-size: 1.3rem;
@@ -68,6 +68,12 @@ ul {
 li {
     font-family: 'Unbounded', cursive;
     font-size: small;
+    color: #808080;
     padding: 3px;
     margin: 2px 0 0 10px;
+}
+
+.span-class{
+    font-weight: 600;
+    color: #595959;
 }
