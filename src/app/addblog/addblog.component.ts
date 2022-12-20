@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { ApiService } from '../api.service';
+
 
 @Component({
   selector: 'app-addblog',
@@ -9,8 +10,7 @@ import { ApiService } from '../api.service';
 })
 export class AddblogComponent implements OnInit {
 
-  submitForm!: FormGroup;
-  buttonContainerVisible = false;
+  blogForm!: FormGroup;
 
   constructor(private api: ApiService, private fb: FormBuilder) { }
 
@@ -19,22 +19,11 @@ export class AddblogComponent implements OnInit {
     this.getStory();
   }
 
-  toggleButtonContainer() {
-    this.buttonContainerVisible = !this.buttonContainerVisible;
-  }
-
-  showButton() {
-    this.buttonContainerVisible = true
-  }
-
-  hideButton() {
-    this.buttonContainerVisible = false
-  }
 
   formControls() {
-    this.submitForm = this.fb.group({
-      title: [''],
-      content: ['']
+    this.blogForm = this.fb.group({
+      title: new FormControl(''),
+      content: new FormControl('')
     })
   }
 
@@ -49,9 +38,15 @@ export class AddblogComponent implements OnInit {
     })
   }
 
+  post() {
+    console.log(this.blogForm.value);
+  }
+
   postStory() {
-    this.api.postData(this.submitForm.value).subscribe({
+    this.api.postData(this.blogForm.value).subscribe({
       next: (res) => {
+        console.log(res);
+        this.blogForm.reset();
         this.getStory();
       },
       error: (err) => {
@@ -59,5 +54,6 @@ export class AddblogComponent implements OnInit {
       }
     })
   }
+
 
 }

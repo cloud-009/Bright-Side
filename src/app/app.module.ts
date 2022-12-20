@@ -13,7 +13,9 @@ import { FooterComponent } from './footer/footer.component';
 import { TrendingComponent } from './trending/trending.component';
 import { AddblogComponent } from './addblog/addblog.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { DivcontentDirective } from './directive/divcontent.directive';
+import { EditorModule } from 'primeng/editor';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     CarouselComponent,
     FooterComponent,
     TrendingComponent,
-    AddblogComponent
+    AddblogComponent,
+    DivcontentDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    EditorModule
   ],
   providers: [],
   bootstrap: [AppComponent],

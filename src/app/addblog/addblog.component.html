@@ -1,33 +1,27 @@
-<div class="container">
-    <div class="body">
-        <form [formGroup]="submitForm">
-            <div class="header">
-                <input type="text" class="title" placeholder="Enter title" formControlName="title">
-            </div>
-            <div class="body">
-                <textarea name="body-content" id="body-content" cols="30" rows="10" placeholder="Enter your story"
-                    formControlName="content" (focus)="showButton()" (blur)="hideButton()">
-                </textarea>
-            </div>
-            <div class="bottom">
-                <button type="button" class="add-button" (click)="postStory()">Post Your Story</button>
-            </div>
-        </form>
-    </div>
+<form [formGroup]="blogForm">
+    <input type="text" formControlName="title" placeholder="Enter the title">
+    <p-editor formControlName="content" [styleClass]="'text-editor'"></p-editor>
+    <button (click)="postStory()" class="push-story">Publish Story</button>
+</form>
 
-    <div class="expand-button" [style.display]="buttonContainerVisible ? 'flex' : 'none'">
-        <div>
-            <ul>
-                <li>
-                    <strong class="fa-solid fa-image fa-xl"></strong>
-                </li>
-                <li>
-                    <strong class="fa-solid fa-link fa-xl"></strong>
-                </li>
-                <li>
-                    <strong class="fa-solid fa-code fa-xl"></strong>
-                </li>
-            </ul>
-        </div>
+<div class="instructions">
+    <div class="heading">
+        <h5 class="header">Writing Instructions</h5>
+    </div>
+    <div class="points">
+        <ul>
+            <li>Give the title to your story</li>
+            <li>For heading, choose the first option from toolbar and you can add heading and subheading</li>
+            <li>You can change the fon-family with the second option. (It is limited to 3 as of now)</li>
+            <li>You can add bold texts using B option from toolbar</li>
+            <li>You can also add Italic text and also underline the texts</li>
+            <li>Colors, to change text or background of text.</li>
+            <li>Alignment of text can also be done using the aligning options from toolbar</li>
+            <li>To add links, type the link and then select the typed link and click the link option from toolbar</li>
+            <li>You can also add images to your story using the image option</li>
+            <li>To add code, select code otpion from toolbar and either you can type or paste the code from your
+                code-editor</li>
+            <li>Spelling mistakes? Not anymore with the spell checker.</li>
+        </ul>
     </div>
 </div>
