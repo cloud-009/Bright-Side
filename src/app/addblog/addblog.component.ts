@@ -11,6 +11,7 @@ import { ApiService } from '../api.service';
 export class AddblogComponent implements OnInit {
 
   blogForm!: FormGroup;
+  resData: any;
 
   constructor(private api: ApiService, private fb: FormBuilder) { }
 
@@ -38,16 +39,14 @@ export class AddblogComponent implements OnInit {
     })
   }
 
-  post() {
-    console.log(this.blogForm.value);
-  }
 
   postStory() {
     this.api.postData(this.blogForm.value).subscribe({
       next: (res) => {
         console.log(res);
         this.blogForm.reset();
-        this.getStory();
+        this.resData = this.getStory();
+        console.log(this.resData);
       },
       error: (err) => {
         console.log(err)

@@ -11,14 +11,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  postData(data: any) {
-    let api_url = `${this.BACKEND_URL}/add-blog`;
-    return this.http.post(api_url, data).pipe(
-      catchError(this.handleHttpError)
-    )
-  }
-
-
+  // get blog method
   getData() {
     return this.http.get(`${this.BACKEND_URL}`)
       .pipe(
@@ -27,7 +20,25 @@ export class ApiService {
   }
 
 
+  // post blog method
+  postData(data: any) {
+    let api_url = `${this.BACKEND_URL}/add-blog`;
+    return this.http.post(api_url, data).pipe(
+      catchError(this.handleHttpError)
+    )
+  }
 
+  // get blog by id method
+  getDataById() {
+    return this.http.get(`${this.BACKEND_URL}/id`).pipe(
+      catchError(this.handleHttpError)
+    )
+  }
+
+
+
+
+  // error handler
   handleHttpError(error: HttpErrorResponse) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
