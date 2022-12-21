@@ -75,10 +75,10 @@ img:hover {
 /* auto slider */
 @keyframes scroll {
     0% {
-        transform: translateX(calc(-250px * 9));
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(calc(-250px * 9));
     }
 }
