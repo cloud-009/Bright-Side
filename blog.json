@@ -11,8 +11,8 @@
     {
       "id":2,
       "author": "https://cdn-icons-png.flaticon.com/512/265/265674.png",
-      "date": "July 15, 2022",
-      "title": "How to create modal dialog components in Angular",
+      "date": "August 15, 2022",
+      "title": "Create filter in Angular",
       "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
       "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
     },
@@ -27,7 +27,7 @@
     {
       "id":4,
       "author": "https://cdn-icons-png.flaticon.com/512/265/265674.png",
-      "date": "July 15, 2022",
+      "date": "September 15, 2022",
       "title": "How to create modal dialog components in Angular",
       "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
       "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
