@@ -55,6 +55,10 @@ input:focus {
     flex-direction: row;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .top-profile {
     width: 40px;
     margin: 0 0 10px 20px;
