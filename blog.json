@@ -1,12 +1,60 @@
 {
   "blogs": [
     {
-      "id": 1,
-      "title": "Standalone components in Angular 14 & 15",
-      "author": "Carrol Antinkson",
-      "Date": "July 29, 2021",
-      "Summary": "Standalone components provide a simplified way to build Angular applications. Standalone components, directives, and pipes aim to streamline the authoring experience by reducing the need for NgModules.",
-      "body": ""
+      "id":1,
+      "author": "https://cdn-icons-png.flaticon.com/512/236/236832.png",
+      "date": "July 15, 2022",
+      "title": "How to create modal dialog components in Angular",
+      "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
+      "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
+    },
+    {
+      "id":2,
+      "author": "https://cdn-icons-png.flaticon.com/512/265/265674.png",
+      "date": "July 15, 2022",
+      "title": "How to create modal dialog components in Angular",
+      "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
+      "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
+    },
+    {
+      "id":3,
+      "author": "https://cdn-icons-png.flaticon.com/512/265/265674.png",
+      "date": "July 15, 2022",
+      "title": "How to create modal dialog components in Angular",
+      "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
+      "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
+    },
+    {
+      "id":4,
+      "author": "https://cdn-icons-png.flaticon.com/512/265/265674.png",
+      "date": "July 15, 2022",
+      "title": "How to create modal dialog components in Angular",
+      "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
+      "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
+    },
+    {
+      "id":5,
+      "author": "https://cdn-icons-png.flaticon.com/512/265/265674.png",
+      "date": "July 15, 2022",
+      "title": "How to create modal dialog components in Angular",
+      "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
+      "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
+    },
+    {
+      "id":6,
+      "author": "https://cdn-icons-png.flaticon.com/512/265/265674.png",
+      "date": "July 15, 2022",
+      "title": "How to create modal dialog components in Angular",
+      "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
+      "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
+    },
+    {
+      "id":7,
+      "author": "https://cdn-icons-png.flaticon.com/512/265/265674.png",
+      "date": "July 15, 2022",
+      "title": "How to create modal dialog components in Angular",
+      "story": " Modal dialogs are great for when you need to restrict a user to a particular action before they can return to the normal use of the application. For instance, when you try to close Microsoft Word...",
+      "right": "https://miro.medium.com/max/1400/0*DBympK-Om6_QCJlE"
     }
   ],
   "comments": [

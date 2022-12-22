@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddblogComponent } from './addblog/addblog.component';
+import { BlogsComponent } from './blogs/blogs.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NewsletterComponent } from './newsletter/newsletter.component';
-import { RecentComponent } from './recent/recent.component';
 
 const routes: Routes = [
   {
@@ -17,7 +16,8 @@ const routes: Routes = [
           { path: 'home', component: HomeComponent }
         ]
       },
-      { path: 'add-blog', component: AddblogComponent }
+      { path: 'add-blog', component: AddblogComponent },
+      { path: 'blogs', component: BlogsComponent }
     ]
   }
 ];

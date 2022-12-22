@@ -14,8 +14,9 @@ import { TrendingComponent } from './trending/trending.component';
 import { AddblogComponent } from './addblog/addblog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { DivcontentDirective } from './directive/divcontent.directive';
 import { EditorModule } from 'primeng/editor';
+import { BlogsComponent } from './blogs/blogs.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EditorModule } from 'primeng/editor';
     FooterComponent,
     TrendingComponent,
     AddblogComponent,
-    DivcontentDirective
+    BlogsComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

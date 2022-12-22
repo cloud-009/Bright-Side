@@ -1,0 +1,28 @@
+<div class="top-container">
+    <div class="left-container">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="right-container">
+        <button type="button" class="add" routerLink="/add-blog">Write Blog</button>
+    </div>
+</div>
+<div class="middle-container" *ngFor="let x of blogData">
+    <div class="down-container">
+        <div class="top-data">
+            <img src="{{x.author}}" alt="user-profile" class="top-profile">
+            <p class="top-date">{{x.date}}</p>
+        </div>
+        <div class="title">
+            <div class="top">
+                <h3 class="top-title">{{x.title}}</h3>
+            </div>
+            <div class="middle">
+                <p class="top-story">{{x.story}}</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <img src="{{x.right}}" alt="right-profile" class="right-image">
+    </div>
+</div>
