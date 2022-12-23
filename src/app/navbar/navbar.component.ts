@@ -9,12 +9,6 @@ export class NavbarComponent implements OnInit {
 
   isMenuOpen = false;
 
-  isScrolled = false;
-  @HostListener('window:scroll')
-  onWindowScroll() {
-    window.scrollY >= 80 ? (this.isScrolled = true) : (this.isScrolled = false)
-  }
-
   constructor() {
     // 
   }
