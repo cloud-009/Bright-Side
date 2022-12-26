@@ -4,7 +4,9 @@ import { AddblogComponent } from './addblog/addblog.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {
@@ -17,7 +19,9 @@ const routes: Routes = [
         ]
       },
       { path: 'add-blog', component: AddblogComponent },
-      { path: 'blogs', component: BlogsComponent }
+      { path: 'blogs', component: BlogsComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent }
     ]
   }
 ];

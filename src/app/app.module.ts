@@ -17,6 +17,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { EditorModule } from 'primeng/editor';
 import { BlogsComponent } from './blogs/blogs.component';
 import { FilterPipe } from './filter.pipe';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { FilterPipe } from './filter.pipe';
     TrendingComponent,
     AddblogComponent,
     BlogsComponent,
-    FilterPipe
+    FilterPipe,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,12 +11,20 @@ export class BlogsComponent implements OnInit {
   blogData: any;
   searchText: string = '';
 
-  constructor() {
+  constructor(private http: HttpClient) {
     // 
-   }
+  }
 
   ngOnInit(): void {
     // 
+    this.http.get('http://localhost:3000/blogs').subscribe({
+      next: (res) => {
+        this.blogData = res
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    })
   }
 
 
